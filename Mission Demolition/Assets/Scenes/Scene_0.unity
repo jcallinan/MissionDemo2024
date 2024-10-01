@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easing: 0.05
+  minXY: {x: 0, y: 0}
   camZ: 0
 --- !u!1 &1296295876
 GameObject:
@@ -797,6 +798,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410268923}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1609800826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609800828}
+  - component: {fileID: 1609800827}
+  m_Layer: 0
+  m_Name: CloudCover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1609800827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609800826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977d83916bf7ae14d9619486922aff47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudSprites:
+  - {fileID: 21300000, guid: 836deea52461f435ea72f5dcb31f1291, type: 3}
+  - {fileID: 21300000, guid: d5a2e889065f049d9ac9be3e93fd13a3, type: 3}
+  - {fileID: 21300000, guid: 6311b30bd3ef5453e9a60de06899db4c, type: 3}
+  - {fileID: 21300000, guid: 96e56f4fcfe4d417f8ff4d59b24b162a, type: 3}
+  - {fileID: 21300000, guid: acc5f0fd7462e4c4894ab0ad7ede1b6f, type: 3}
+  numClouds: 60
+  minPos: {x: -20, y: -5, z: -5}
+  maxPos: {x: 300, y: 40, z: 5}
+  scaleRange: {x: 1, y: 2}
+--- !u!4 &1609800828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609800826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -805,3 +860,4 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 514495335}
   - {fileID: 1296295879}
+  - {fileID: 1609800828}
